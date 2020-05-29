@@ -35,6 +35,15 @@ const useStyles = makeStyles({
     fontSize: '2rem',
     fontFamily:'Times New Roman',
     writingMode:'vertical-rl',
+  },
+  text: {
+    display:'flex',
+    justifyContent:'center',
+    alignItems:' center',
+    margin:0,
+    paddingTop:'1rem',
+    fontSize: '1.5rem',
+    color:'#5AB1FF',
   }
 });
 
@@ -44,9 +53,6 @@ export default function MediaCard() {
   return (
       <>
         <Grid container spacing={2}>
-        {/* <div className={classes.vrtcl}>
-            <p>Projects</p>
-        </div> */}
             <Grid item xs={12} sm={12} md={4}>
                 <Card className={classes.root}>
                 <CardActionArea>
@@ -56,7 +62,8 @@ export default function MediaCard() {
                         title="Contemplative Reptile"
                     />
                 </CardActionArea>
-                <CardActions className={classes.button}>
+                <h3 className={classes.text}>Robo Friends</h3>
+                <CardActions className={classes.button}> 
                     <Button 
                         className={classes.button}
                         startIcon={<GitHubIcon />}
@@ -80,6 +87,7 @@ export default function MediaCard() {
                         title="Contemplative Reptile"
                     />
                 </CardActionArea>
+                <h3 className={classes.text}>Tourist Places</h3>
                 <CardActions className={classes.button}>
                     <Button 
                         className={classes.button}
@@ -104,7 +112,8 @@ export default function MediaCard() {
                         title="Contemplative Reptile"
                     />
                 </CardActionArea>
-                <CardActions className={classes.button}>
+                <h3 className={classes.text}>Face Recognition</h3>
+                <CardActions className={classes.button}>  
                     <Button 
                         className={classes.button}
                         startIcon={<GitHubIcon />}
