@@ -17,7 +17,8 @@ center: {
 },
 link:{
     textDecoration:'none',
-    paddingRight:'1rem'
+    paddingRight:'1rem',
+    color:'inherit'
 },
 logo:{
     width:'7rem'
@@ -31,7 +32,7 @@ const Header = () => {
         <React.Fragment>
             <Grid container className={classes.root}>
                 <Grid item xs={9} sm={6} md={9}  className={classes.center}>
-                    <Link to="/" >
+                    <Link to="/Portfolio" >
                         <img className={classes.logo} src={Logo} alt="Logo" />
                     </Link>
                 </Grid>

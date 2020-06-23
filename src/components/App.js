@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path="/" component={Home}/>
+          <Route exact path="/Portfolio" component={Home}/>
           <Route path="/about" component={About}/>
         </Switch>
         <Connect />
