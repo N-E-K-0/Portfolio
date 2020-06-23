@@ -10,8 +10,9 @@ const useStyles = makeStyles((theme) => ({
         },
         float:'right',
         fontSize: '1rem',
-        fontFamily:'inherit',
+        fontFamily:'Asap',
         color: '#A6B1BA',
+        paddingRight:'1rem'
     },
     icon: {
         color: '#E7452C',
@@ -24,7 +25,7 @@ const Footer = () => {
     return(
         <React.Fragment>
             <p className={classes.root}>
-                Made with <FavoriteIcon  className={classes.icon}/> by Samiul Islam.
+                Hand crafted & made with <FavoriteIcon  className={classes.icon}/> by Sami.
             </p>
         </React.Fragment>
     )

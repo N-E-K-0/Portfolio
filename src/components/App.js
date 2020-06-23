@@ -1,26 +1,23 @@
 import React from 'react';
-import Header from './Header';
-import Intro from './Intro';
-import MiddleSection from './MiddleSection';
-import Connect from './Connect';
-import Footer from './Footer';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
+import Header from './Header/Header';
+import Connect from './Footer/Connect';
+import Footer from './Footer/Footer';
+import Home from './Home/Home';
+import About from './About/About';
+import {BrowserRouter , Switch, Route} from 'react-router-dom'
 
 function App() {
   return (
     <React.Fragment>
-      <CssBaseline />
-      <Container maxWidth="lg">
-        <Typography component="div" className='style' >
-          {/* <Header /> */}
-          <Intro />
-          <MiddleSection />
-          <Connect />
-          <Footer />
-        </Typography>
-      </Container>
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/about" component={About}/>
+        </Switch>
+        <Connect />
+        <Footer />
+      </BrowserRouter>
     </React.Fragment>
   );
 }
