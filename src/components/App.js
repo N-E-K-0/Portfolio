@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path={`${process.env.PUBLIC_URL}/Portfolio`} component={Home}/>
-          <Route path={`${process.env.PUBLIC_URL}/about`} component={About}/>
+          <Route exact path="/Portfolio" component={Home}/>
+          <Route path="/about" component={About}/>
         </Switch>
         <Connect />
         <Footer />
