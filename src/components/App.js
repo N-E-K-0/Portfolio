@@ -9,7 +9,7 @@ import {BrowserRouter , Switch, Route} from 'react-router-dom'
 function App() {
   return (
     <React.Fragment>
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Header />
         <Switch>
           <Route exact path="/Portfolio" component={Home}/>
