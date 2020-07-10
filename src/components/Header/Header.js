@@ -8,7 +8,8 @@ import Logo from '../../assets/images/favicon1.jpg';
 const useStyles = makeStyles((theme) => ({
 root:{
     fontFamily:'Asap',
-    paddingTop:'1rem'
+    fontSize:'1.2rem',
+    paddingTop:'1rem',
 },
 center: {
     alignItems: 'center',
@@ -36,13 +37,17 @@ const Header = () => {
                         <img className={classes.logo} src={Logo} alt="Logo" />
                     </Link>
                 </Grid>
-                <Grid item xs={3} sm={6} md={3} className={classes.center}><br />
+                <Grid item xs={1} sm={2} md={1} className={classes.center}><br />
                     <Link 
                         to="/about"
                         className={classes.link}
                     >
                         ABOUT
-                    </Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </Link>
+                </Grid>
+
+                <Grid item xs={1} sm={2} md={1} className={classes.center}><br />
+
                     <a 
                         className={classes.link}
                         href={Resume}

@@ -1,11 +1,12 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import IconButton from '@material-ui/core/IconButton';
+import Link from '@material-ui/core/Link';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles({
     root:{
@@ -15,17 +16,59 @@ const useStyles = makeStyles({
         fontSize:'2rem',
     },
     connect: {
-        float:'left'
+        float:'left',
     },
     asotphe: {
         color:'#E7452C',
     },
-    icon: {
+    gmail: {
         margin:'0.3rem',
         padding:0,
         cursor:'pointer',
+        fontSize:'default',
+        color:'#757575',
         '&:hover':{
-            color:'#4181CB'
+            color:'#D54B3D'
+        }
+    },
+    facebook: {
+        margin:'0.3rem',
+        padding:0,
+        cursor:'pointer',
+        fontSize:'default',
+        color:'#757575',
+        '&:hover':{
+            color:'#3B579D'
+        }
+    },
+    twitter: {
+        margin:'0.3rem',
+        padding:0,
+        cursor:'pointer',
+        fontSize:'default',
+        color:'#757575',
+        '&:hover':{
+            color:'#55ABE1'
+        }
+    },
+    linkedIn: {
+        margin:'0.3rem',
+        padding:0,
+        cursor:'pointer',
+        fontSize:'default',
+        color:'#757575',
+        '&:hover':{
+            color:'#3D7BB7'
+        }
+    },
+    github: {
+        margin:'0.3rem',
+        padding:0,
+        cursor:'pointer',
+        fontSize:'default',
+        color:'#757575',
+        '&:hover':{
+            color:'#121011'
         }
     },
 });
@@ -51,30 +94,31 @@ const Connect = () => {
                 <p>Hey! Currently, I am looking for full-time opportunities. Feel free to get in touch.</p>
             </div>
             <div className={classes.connect}>
-                <IconButton 
-                    className={classes.icon}
-                    aria-label="Facebook.com" 
-                    onClick={() => window.open('mailto:isamiul120@gmail.com?subject=subject&body=body')}>
-                    <EmailIcon fontSize="default" />
-                </IconButton>
-                <IconButton 
-                    className={classes.icon}
-                    aria-label="Facebook.com" 
-                    onClick={() => window.open('https://www.facebook.com/shifat.sami')}>
-                    <FacebookIcon fontSize="default" />
-                </IconButton>
-                <IconButton 
-                    className={classes.icon}
-                    aria-label="Twitter.com" 
-                    onClick={() => window.open('https://twitter.com/ALazyHooman')}>
-                    <TwitterIcon fontSize="default" />
-                </IconButton>
-                <IconButton 
-                    className={classes.icon}
-                    aria-label="Linkedin.com" 
-                    onClick={() => window.open('https://www.linkedin.com/in/mohammed-samiul-islam-47a2b0a1')}>
-                    <LinkedInIcon fontSize="default" />
-                </IconButton>
+                <Link 
+                    href="mailto:isamiul120@gmail.com?subject=subject&body=body"
+                    className={classes.gmail}
+                ><EmailIcon  />
+                </Link>
+                <Link 
+                    href="https://www.facebook.com/shifat.sami"
+                    className={classes.facebook}
+                ><FacebookIcon  />
+                </Link>
+                <Link 
+                    href="https://twitter.com/ALazyHooman"
+                    className={classes.twitter}
+                ><TwitterIcon  />
+                </Link>
+                <Link 
+                    href="https://www.linkedin.com/in/mohammed-samiul-islam-47a2b0a1"
+                    className={classes.linkedIn}
+                ><LinkedInIcon  />
+                </Link>
+                <Link 
+                    href="https://github.com/N-E-K-0"
+                    className={classes.github}
+                ><GitHubIcon  />
+                </Link>
             </div>
             </Grid>
         </Grid>

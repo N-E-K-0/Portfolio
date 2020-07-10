@@ -1,5 +1,5 @@
 import React from 'react';
-import Projects from './Projectsss';
+import Projects from './Project/Projectsss';
 import Intro from './Intro';
 
 export default function About(){
