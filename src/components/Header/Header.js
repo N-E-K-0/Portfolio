@@ -18,8 +18,18 @@ center: {
 },
 link:{
     textDecoration:'none',
-    paddingRight:'1rem',
-    color:'inherit'
+    color:'inherit',
+    paddingBottom:'0.3rem',
+    borderBottom: '0rem solid #fff',
+    borderBottomRightRadius: '0',
+    transition: theme.transitions.create(
+        ['border-bottom'],
+        { duration: theme.transitions.duration.standard }
+    ),
+    '&:hover':{
+        borderBottom:'0.1rem solid #E7452C',
+        borderBottomRightRadius: '0.35rem',
+    }
 },
 logo:{
     width:'7rem',
@@ -41,9 +51,8 @@ const Header = () => {
                         src={Logo} alt="Logo"
                         onClick={() => window.open("/Portfolio")}                        
                     />
-
                 </Grid>
-                <Grid item xs={1} sm={2} md={1} className={classes.center}><br />
+                <Grid item xs={1} sm={2} md={1} className={classes.center}>
                     <Link 
                         to="/about"
                         className={classes.link}
@@ -52,8 +61,7 @@ const Header = () => {
                     </Link>
                 </Grid>
 
-                <Grid item xs={1} sm={2} md={1} className={classes.center}><br />
-
+                <Grid item xs={1} sm={2} md={1} className={classes.center}>
                     <a 
                         className={classes.link}
                         href={Resume}

@@ -6,10 +6,10 @@ import Typical from 'react-typical';
 const useStyles = makeStyles((theme) => ({
     intro:{
         height:'15rem',
-        padding:'6rem'
+        padding:'5rem'
     },
     h1:{
-        fontSize:'5rem',
+        fontSize:'4.5rem',
     },
     p:{
         float:'left',
@@ -28,7 +28,7 @@ const Intro = () => {
     return(
         <Parallax 
             className="custom-class" 
-            x={[-40,50]}
+            x={[-45,50]}
             y={[10, -50]} 
         >
             <div className={classes.intro}>
