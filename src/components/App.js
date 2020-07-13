@@ -4,20 +4,24 @@ import Connect from './Footer/Connect';
 import Footer from './Footer/Footer';
 import Home from './Home/Home';
 import About from './About/About';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import {BrowserRouter , Switch, Route} from 'react-router-dom'
 
 function App() {
   return (
     <React.Fragment>
-      <BrowserRouter>
-        <Header />
-        <Switch>
-          <Route exact path="/Portfolio/" component={Home}/>
-          <Route path="/about" component={About}/>
-        </Switch>
-        <Connect />
-        <Footer />
-      </BrowserRouter>
+      
+        <BrowserRouter>
+          <Header />
+          <ParallaxProvider>
+            <Switch>
+              <Route exact path="/Portfolio/" component={Home}/>
+              <Route path="/about" component={About}/>
+            </Switch>
+            <Connect />
+          </ParallaxProvider>
+          <Footer />
+        </BrowserRouter>
     </React.Fragment>
   );
 }

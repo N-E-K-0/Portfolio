@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
 root:{
     fontFamily:'Asap',
     fontSize:'1.2rem',
-    paddingTop:'1rem',
+    padding:'1.5rem 0.5rem',
 },
 center: {
     alignItems: 'center',
@@ -22,7 +22,10 @@ link:{
     color:'inherit'
 },
 logo:{
-    width:'7rem'
+    width:'7rem',
+    '&:hover':{
+        cursor:'pointer',
+    }
 },
 }));
 
@@ -33,9 +36,12 @@ const Header = () => {
         <React.Fragment>
             <Grid container className={classes.root}>
                 <Grid item xs={9} sm={6} md={9}  className={classes.center}>
-                    <Link to="/Portfolio" >
-                        <img className={classes.logo} src={Logo} alt="Logo" />
-                    </Link>
+                    <img 
+                        className={classes.logo} 
+                        src={Logo} alt="Logo"
+                        onClick={() => window.open("/Portfolio")}                        
+                    />
+
                 </Grid>
                 <Grid item xs={1} sm={2} md={1} className={classes.center}><br />
                     <Link 

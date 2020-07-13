@@ -8,3 +8,13 @@ body {
   padding:0px;
   color: #010026;
 }
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+
+  background: #FFC312;
+}
+
+::selection {
+  color: #fff;
+  background: #FFC312;
+}

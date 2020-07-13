@@ -29,9 +29,10 @@ const useStyles = makeStyles({
   },
   para:{
     display:'flex',
-    justifyContent:'center',
-    alignItems:'center',
+    // justifyContent:'center',
+    // alignItems:'center',
     fontSize:'1.5rem',
+    float:'left'
 },
 image:{
     padding:'1rem',
@@ -100,8 +101,7 @@ export default function Project() {
                     <button
                         className="draw meet"
                         onClick={() => 
-                            window.open('https://github.com/N-E-K-0/Robofriends') &&
-                            window.location.reload()
+                            window.open('https://github.com/N-E-K-0/Robofriends') 
                         }
                     >
                         Github
@@ -109,8 +109,7 @@ export default function Project() {
                     <button
                         className="draw meet"
                         onClick={() => 
-                            window.open('https://n-e-k-0.github.io/Robofriends/') &&
-                            window.location.reload()
+                            window.open('https://n-e-k-0.github.io/Robofriends/') 
                         }
                     >
                         Preview

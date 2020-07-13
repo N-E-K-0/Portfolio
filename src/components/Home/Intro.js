@@ -1,44 +1,53 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-// import Image from '../../assets/images/intro_image.jpg';
+import { Parallax } from 'react-scroll-parallax';
 import Typical from 'react-typical';
 
 const useStyles = makeStyles((theme) => ({
     intro:{
-        // backgroundImage:`url(${Image})`,
-        width:'100%',
         height:'15rem',
+        padding:'6rem'
     },
-    center:{
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'center',
-        fontWeight:'2rem',
+    h1:{
+        fontSize:'5rem',
+    },
+    p:{
+        float:'left',
+        fontSize:'2rem',
     },
     text:{
         color:'#E7452C',
     }
 }));
 
+ 
+
 const Intro = () => {
     const classes = useStyles();
 
     return(
-        <div className={classes.intro}>
-            <h1 className={classes.center}>Hi! I'm&nbsp;<span className={classes.text}>Samiul</span></h1>
-            <p className={classes.center}>I am&nbsp;
+        <Parallax 
+            className="custom-class" 
+            x={[-40,50]}
+            y={[10, -50]} 
+        >
+            <div className={classes.intro}>
+                <h1 className={classes.h1}>Hi! I'm&nbsp;<span className={classes.text}>Samiul</span></h1>
+                <p className={classes.p}>I'm &nbsp;
                 <Typical 
                     loop={Infinity}
                     wrapper="b"
                     steps={[
-                        'an engineer',
+                        'an engineer, ',
                         2000,
-                        'a developer',
+                        'a developer, ',
                         2000,
                     ]}
                 />
-            </p>
-        </div>
+                graduated in computer sceince and engineering and currently working as a freelance web developer.
+                </p>
+            </div>
+        </Parallax> 
     )
 }
 
