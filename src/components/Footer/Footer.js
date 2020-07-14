@@ -20,12 +20,17 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+
 const Footer = () => {
     const classes = useStyles();
     return(
         <React.Fragment>
             <p className={classes.root}>
-                Hand crafted & made with <FavoriteIcon  className={classes.icon}/> by Sami.
+                Hand crafted & made with 
+                <FavoriteIcon  
+                    className={classes.icon}
+                />
+                by Sami.
             </p>
         </React.Fragment>
     )

@@ -16,6 +16,11 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
+        textDecoration:'none',
+        '&:hover':{
+            textDecoration: 'line-through',
+            textDecorationColor: '#E7452C',
+        }
     },
     large: {
         width: theme.spacing(20),

@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import { motion } from "framer-motion";
 import Link from '@material-ui/core/Link';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -14,6 +15,11 @@ const useStyles = makeStyles({
     },
     text:{
         fontSize:'2rem',
+        textDecoration:'none',
+        '&:hover':{
+            textDecoration: 'line-through',
+            textDecorationColor: '#E7452C',
+        }
     },
     connect: {
         float:'left',
@@ -73,6 +79,22 @@ const useStyles = makeStyles({
     },
 });
 
+
+// const divVariants={
+//     hidden:{
+//         opacity: 0,
+//         x:'100vw'
+//     },
+//     visible:{
+//         opacity: 1,
+//         x:
+//         transition:{
+//         delay: 0.5,
+//         },
+//     }
+//   }
+
+
 const Connect = () => {
     const classes = useStyles();
 
@@ -84,16 +106,19 @@ const Connect = () => {
                 <hr />
             </Grid>
             <Grid item xs ={4} sm={4} md={4}><br /><br /><br /><br /><br />
-            <div className={classes.connect}>
+            <motion.div 
+                className={classes.connect}
+                // variants={divVariants}
+            >
                 <h2 className={classes.icon}>Let 
                     <span className={classes.asotphe}>'</span>s &nbsp;
                     <span className={classes.text}>Connect</span>
                 </h2>
-            </div>
-            <div className={classes.connect}>
+            </motion.div>
+            <motion.div className={classes.connect}>
                 <p>Hey! Currently, I am looking for full-time opportunities. Feel free to get in touch.</p>
-            </div>
-            <div className={classes.connect}>
+            </motion.div>
+            <motion.div className={classes.connect}>
                 <Link 
                     href="mailto:isamiul120@gmail.com?subject=subject&body=body"
                     className={classes.gmail}
@@ -119,7 +144,7 @@ const Connect = () => {
                     className={classes.github}
                 ><GitHubIcon  />
                 </Link>
-            </div>
+            </motion.div>
             </Grid>
         </Grid>
     )
