@@ -28,8 +28,8 @@ const Intro = () => {
     return(
         <Parallax 
             className="custom-class" 
-            x={[-45,50]}
-            y={[10, -50]} 
+            x={[-40,50]}
+            y={[20, -50]} 
         >
             <div className={classes.intro}>
                 <h1 className={classes.h1}>Hi! I'm&nbsp;<span className={classes.text}>Samiul</span></h1>

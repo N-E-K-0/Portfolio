@@ -46,7 +46,7 @@ export default function About(){
                 </div>
                 <h2 className={classes.center}>Mohammed Samiul Islam</h2>
                 <h4 className={classes.center}>Front-end Developer</h4>
-                <p >Hi,I am Mohammed Samiul Islam, former software engineer, currently working as a freelance software developer and completed bachelor degree in computer sceince and engineering.
+                <p >Hi,I am Mohammed Samiul Islam, former software engineer, currently working as a freelance web developer and completed bachelor degree in computer sceince and engineering.
                 </p>
                 <p >I have around 1+ year experience in web developement. I generally take few projects at a time so that I can give full attention to those project details. I can easily collaborate with a team but sometime prefer working alone.
                 I had a great experience in my first job, a start up environment, and try to pusue to be a full stack developer. Currently, I am working as a freelance developer as a front end developer.

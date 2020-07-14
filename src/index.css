@@ -9,12 +9,12 @@ body {
   color: #010026;
 }
 ::-moz-selection { /* Code for Firefox */
-  color: #fff;
+  color: #E7452C;
 
-  background: #FFC312;
+  /* background: #FFC312; */
 }
 
 ::selection {
-  color: #fff;
-  background: #FFC312;
+  color: #E7452C;
+  /* background: #FFC312; */
 }
