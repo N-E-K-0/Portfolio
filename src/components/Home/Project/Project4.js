@@ -99,8 +99,7 @@ class Project1 extends React.Component{
 
     return(
         <div
-        onMouseEnter={this.handleHover}
-            onMouseLeave={this.handleHover}
+            onClick={this.handleHover}
         >
         {this.state.isHovering
         ?
@@ -113,7 +112,7 @@ class Project1 extends React.Component{
             </div>
         :
             <div>
-                <h1 className={classes.line}>Price Comparison</h1>
+                <h1 className={classes.line}>Good Deal</h1>
                 <p>
                     This is an e-commerce website where the customers can comapare the price of a single product of their choice.
                 </p><br />

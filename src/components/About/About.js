@@ -23,9 +23,8 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     large: {
-        width: theme.spacing(20),
-        height: theme.spacing(20),
-        border:'1vh solid #E6DAC9'
+        width: '12rem',
+        height: '12rem',
     },
     button:{
         textAlign:'center',

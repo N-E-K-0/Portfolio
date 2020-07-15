@@ -2,11 +2,24 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Parallax } from 'react-scroll-parallax';
 import Typical from 'react-typical';
+import cover from '../../assets/images/cover.jpg'
 
 const useStyles = makeStyles((theme) => ({
     intro:{
-        height:'15rem',
-        padding:'5rem'
+        height:'20rem',
+        padding:'5rem',  
+        marginRight: '0.5rem',
+        '&::before': {
+            backgroundImage:`url(${cover})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'right',
+            content: '""',
+            top: '0px',
+            right: '0px',
+            bottom: '0px',
+            left: '0px',
+            opacity: '0.75',
+        },
     },
     h1:{
         fontSize:'4.5rem',

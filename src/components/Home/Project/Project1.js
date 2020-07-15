@@ -99,8 +99,7 @@ class Project1 extends React.Component{
 
     return(
         <div
-            onMouseEnter={this.handleHover}
-            onMouseLeave={this.handleHover}
+            onClick={this.handleHover}
         >
         {this.state.isHovering
         ?

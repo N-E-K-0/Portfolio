@@ -90,11 +90,11 @@ export default function Project() {
             <p 
                 className={classes.para}
             >
-                <strong>Selected Projects</strong>
+                <strong>SELECTED PROJECTS</strong>
             </p>
         </div><br /><br />
         <Grid container spacing={10} className={classes.root}>
-        <Grid item xs={0.2} sm={0.2} md={0.2}></Grid>
+        <Grid item xs={0.5} sm={0.5} md={0.5}></Grid>
             <Grid item xs={10} sm={10} md={5}>
                 {/* Project 1 */}
                 <Project1 />
@@ -106,7 +106,7 @@ export default function Project() {
         </Grid>
 
         <Grid container spacing={10} className={classes.root}>
-            <Grid item xs={0.2} sm={0.2} md={0.2}></Grid>
+            <Grid item xs={0.5} sm={0.5} md={0.5}></Grid>
             <Grid item xs={10} sm={10} md={5}>
                 {/* Project 3 */}
                 <Project3 />
