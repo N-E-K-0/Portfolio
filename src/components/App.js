@@ -8,19 +8,19 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import {BrowserRouter , Switch, Route} from 'react-router-dom'
 
 function App() {
+
   return (
     <React.Fragment>
-      
         <BrowserRouter>
-          <Header />
-          <ParallaxProvider>
-            <Switch>
-              <Route exact path="/Portfolio/" component={Home}/>
-              <Route path="/about" component={About}/>
-            </Switch>
-            <Connect />
-          </ParallaxProvider>
-          <Footer />
+            <Header /> 
+              <Switch>
+                <ParallaxProvider>
+                  <Route exact path="/Portfolio/" component={Home}/>
+                  <Route path="/about" component={About}/>
+                </ParallaxProvider>
+              </Switch>
+              <Connect />
+            <Footer />
         </BrowserRouter>
     </React.Fragment>
   );

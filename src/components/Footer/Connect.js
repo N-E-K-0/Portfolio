@@ -3,9 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { motion } from "framer-motion";
 import Link from '@material-ui/core/Link';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
@@ -35,26 +33,6 @@ const useStyles = makeStyles({
         color:'#757575',
         '&:hover':{
             color:'#D54B3D'
-        }
-    },
-    facebook: {
-        margin:'0.3rem',
-        padding:0,
-        cursor:'pointer',
-        fontSize:'default',
-        color:'#757575',
-        '&:hover':{
-            color:'#3B579D'
-        }
-    },
-    twitter: {
-        margin:'0.3rem',
-        padding:0,
-        cursor:'pointer',
-        fontSize:'default',
-        color:'#757575',
-        '&:hover':{
-            color:'#55ABE1'
         }
     },
     linkedIn: {
@@ -123,16 +101,6 @@ const Connect = () => {
                     href="mailto:isamiul120@gmail.com?subject=subject&body=body"
                     className={classes.gmail}
                 ><EmailIcon  />
-                </Link>
-                <Link 
-                    href="https://www.facebook.com/shifat.sami"
-                    className={classes.facebook}
-                ><FacebookIcon  />
-                </Link>
-                <Link 
-                    href="https://twitter.com/ALazyHooman"
-                    className={classes.twitter}
-                ><TwitterIcon  />
                 </Link>
                 <Link 
                     href="https://www.linkedin.com/in/mohammed-samiul-islam-47a2b0a1"

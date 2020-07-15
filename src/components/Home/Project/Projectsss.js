@@ -47,6 +47,7 @@ image:{
     maxHeight:'30rem',
     transition: 'transform 0.5s',
     boxShadow:'0.09rem 0.09rem 0.2rem #757575',
+    marginTop:'1rem',
     '&:hover': {
         transform: 'scale(0.95)'
      },
@@ -181,7 +182,7 @@ export default function Project() {
                     Preview
                 </button>
             </Grid>
-        </Grid><br /><br /><br /><br /><br /><br />
+        </Grid><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
         {/* Project 2 */}
         <Grid container spacing={2}>
@@ -272,7 +273,7 @@ export default function Project() {
                     Preview
                 </button>
             </Grid>
-        </Grid><br /><br /><br /><br /><br /><br />
+        </Grid><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
         {/* Project 3 */}
         <Grid container spacing={2}>
@@ -378,7 +379,7 @@ export default function Project() {
                     Github
                 </button>
             </Grid>
-        </Grid><br /><br /><br /><br /><br /><br />
+        </Grid><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
         {/* Project 4*/}
         <Grid container spacing={2}>
