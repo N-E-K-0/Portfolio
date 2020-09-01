@@ -1,8 +1,9 @@
 import React from 'react';
+import Container from '@material-ui/core/Container';
 import Header from './Header/Header';
 import Connect from './Footer/Connect';
 import Footer from './Footer/Footer';
-import Home from './Home/Home';
+import Home from './Home';
 import About from './About/About';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import {BrowserRouter , Switch, Route} from 'react-router-dom'
@@ -15,8 +16,10 @@ function App() {
             <Header /> 
               <Switch>
                 <ParallaxProvider>
-                  <Route exact path="/Portfolio/" component={Home}/>
-                  <Route path="/about" component={About}/>
+                  <Container maxWidth="lg">
+                    <Route exact path="/Portfolio/" component={Home}/>
+                    <Route path="/about" component={About} />
+                  </Container>
                 </ParallaxProvider>
               </Switch>
               <Connect />

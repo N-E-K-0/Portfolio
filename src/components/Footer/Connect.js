@@ -58,21 +58,6 @@ const useStyles = makeStyles({
 });
 
 
-// const divVariants={
-//     hidden:{
-//         opacity: 0,
-//         x:'100vw'
-//     },
-//     visible:{
-//         opacity: 1,
-//         x:
-//         transition:{
-//         delay: 0.5,
-//         },
-//     }
-//   }
-
-
 const Connect = () => {
     const classes = useStyles();
 
@@ -94,7 +79,7 @@ const Connect = () => {
                 </h2>
             </motion.div>
             <motion.div className={classes.connect}>
-                <p>Hey! Currently, I am looking for full-time opportunities. Feel free to get in touch.</p>
+                <p>I am always open to interesting and fun projects! Feel free to get in touch.</p>
             </motion.div>
             <motion.div className={classes.connect}>
                 <Link 

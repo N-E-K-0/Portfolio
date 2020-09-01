@@ -26,7 +26,7 @@ const Footer = () => {
     return(
         <React.Fragment>
             <p className={classes.root}>
-                Hand crafted & made with 
+                Made with 
                 <FavoriteIcon  
                     className={classes.icon}
                 />

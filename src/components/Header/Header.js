@@ -13,6 +13,7 @@ root:{
     padding:'1.5rem 0.5rem',
 },
 center: {
+    marginTop:'1rem',
     alignItems: 'center',
     justifyContent: 'center',
     lineHeight: 1.5,
@@ -21,7 +22,6 @@ link:{
     textDecoration:'none',
     color:'inherit',
     '&:hover':{
-        // color:'#E7452C',
         textDecoration: 'line-through',
         textDecorationColor: '#E7452C',
         fontSize:'1.3rem'

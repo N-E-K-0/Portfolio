@@ -40,7 +40,7 @@ export default function About(){
     return(
         <>
             <CssBaseline />
-            <Container maxWidth='sm' className={classes.root}>
+            <Container maxWidth='md' className={classes.root}>
                 <div className={classes.center}>
                 <Avatar 
                     alt="Remy Sharp" 
