@@ -45,18 +45,18 @@ const touristlink = 'https://n-e-k-0.github.io/TouristPlace/'
 const touristletter = 'T'
 
 const faceheader = 'Face Detection'
-const facetext = 'This web app can detect any image with human face in it'
+const facetext = 'This web app can detect any image with a human face in it.'
 const facelink = 'https://github.com/N-E-K-0/Face_detection'
 const faceletter = 'F'
 
 const gooddealheader = 'Good Deal'
-const gooddealtext = 'Comming soon.'
+const gooddealtext = 'Coming soon.'
 const goooddeallink = 'https://drive.google.com/file/d/13u0c-qfRbad0btDWF78aZeOtb2QMh_CU/view?usp=sharing'
 const goooddealletter = 'G'
 
 {/* Mobile Apps */}
 const gsmheader = 'GSMArena Clone'
-const gsmtext = 'Comming soon.'
+const gsmtext = 'Coming soon.'
 const gsmlink = 'https://drive.google.com/drive/folders/1aJs-QhZHeOr6H0GeXtCFdCKA6SyLO57b?usp=sharing'
 const gsmletter = 'G'
 
@@ -71,16 +71,16 @@ const Projects = () => {
       <div className={classes.root}>
         <h1 className={classes.header}>Web Apps</h1>
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={12} md={3}>
+          <Grid item xs={12} sm={12} md={4}>
             <Card header={roboheader} img={roboImg} text={robotext} link={robolink} letter={roboletter} />
           </Grid>
-           <Grid item xs={12} sm={12} md={3}>
+           <Grid item xs={12} sm={12} md={4}>
             <Card header={touristheader} img={touristImg} text={touirstext} link={touristlink} letter={touristletter}/>
           </Grid>
-          <Grid item xs={12} sm={12} md={3}>
+          <Grid item xs={12} sm={12} md={4}>
             <Card header={faceheader} img={faceImg} text={facetext} link={facelink} letter={faceletter}/>
           </Grid>
-          <Grid item xs={12} sm={12} md={3}>
+          <Grid item xs={12} sm={12} md={4}>
             <Card header={gooddealheader} img={gooddealImg} text={gooddealtext} link={goooddeallink} letter={goooddealletter}/>
           </Grid>
         </Grid>
@@ -107,7 +107,7 @@ const Projects = () => {
           </Grid>
         </Grid>
       </div>
-      
+
     </div>
   );
 }
