@@ -1,129 +1,115 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import ListSubheader from '@material-ui/core/ListSubheader';
+import Card from './projectCard'
+// Images
 import roboImg from '../../../assets/images/Robofriends.png';
 import touristImg from '../../../assets/images/Touristplace.jpg';
 import faceImg from '../../../assets/images/Face_detection.JPG'
-import goodealImg from '../../../assets/images/Prooject4.jpg';
+import gooddealImg from '../../../assets/images/goodeal.jpg';
+import objectImg from '../../../assets/images/object_detection.jpg';
+import gsmImg from '../../../assets/images/gsmapp.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
-  },
-  gridList: {
-    width: '60rem',
-    height: '45rem',
-  },
-  gridListsingle: {
-    flexWrap: 'nowrap',
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: 'translateZ(0)',
-  },
-  icon: {
-    color: 'rgba(255, 255, 255, 0.54)',
+    margin:0,
   },
   header: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '5rem',
+    marginTop: '7rem',
     padding: '1rem',
-    fontSize: '1.5rem'
-  }
+    '&:hover':{
+        textDecoration: 'line-through',
+        textDecorationColor: '#E7452C',
+    }
+  },
 }));
 
-const aiData = [
-  {
-    img: roboImg,
-    title: 'Robo Friends',
-    link:'https://n-e-k-0.github.io/Robofriends/',
-  },
-  {
-    img: touristImg,
-    title: 'Tourist Place',
-    link:'https://n-e-k-0.github.io/TouristPlace/',
+{/* AI projects */}
+const objectdetectheader = 'Object Detection'
+const objectdetecttext = 'One can easily detect fire, smoke and human body simultanously. '
+const objectdetectlink = 'https://github.com/N-E-K-0/object_detection'
+const objectdetectletter = 'O'
 
-  },
-]
+{/* Web Apps */ }
+const roboheader = 'Robo Friends'
+const robotext = 'This is a fun project. You can find  your favorite robot friends from here. '
+const robolink = 'https://n-e-k-0.github.io/Robofriends/'
+const roboletter = 'R'
 
-const webAppData = [
-  {
-    img: roboImg,
-    title: 'Robo Friends',
-    link:'https://n-e-k-0.github.io/Robofriends/',
-  },
-  {
-    img: touristImg,
-    title: 'Tourist Place',
-    link:'https://n-e-k-0.github.io/TouristPlace/',
+const touristheader = 'Tourist Place'
+const touirstext = 'The web app try to show the noteworthy places of bangladesh to travel.'
+const touristlink = 'https://n-e-k-0.github.io/TouristPlace/'
+const touristletter = 'T'
 
-  },
-  {
-    img: faceImg,
-    title: 'Face Detection',
-    link:'https://github.com/N-E-K-0/Face_detection',
-  },
-  {
-    img: goodealImg,
-    title: 'Good Deal',
-    link:'https://drive.google.com/file/d/13u0c-qfRbad0btDWF78aZeOtb2QMh_CU/view?usp=sharing',
-  },
-];
+const faceheader = 'Face Detection'
+const facetext = 'This web app can detect any image with human face in it'
+const facelink = 'https://github.com/N-E-K-0/Face_detection'
+const faceletter = 'F'
 
-export default function SingleLineGridList() {
+const gooddealheader = 'Good Deal'
+const gooddealtext = 'The web app helps the user to compare their desired products.'
+const goooddeallink = 'https://drive.google.com/file/d/13u0c-qfRbad0btDWF78aZeOtb2QMh_CU/view?usp=sharing'
+const goooddealletter = 'G'
+
+{/* Mobile Apps */}
+const gsmheader = 'GSMArena Clone'
+const gsmtext = 'Mobile app for smartphone specification and comparison. '
+const gsmlink = 'https://github.com/N-E-K-0/object_detection'
+const gsmletter = 'G'
+
+
+const Projects = () => {
   const classes = useStyles();
 
   return (
     <div>
-      {/* AI Projects */}
-      <div className={classes.root}>
-        <h1 className={classes.header}>AI Projects</h1>
-        <GridList className={classes.gridListsingle} cols={3}>
-          {aiData.map((project) => (
-            <GridListTile key={project.img}>
-              <img src={project.img} alt={project.title} />
-              <GridListTileBar
-                title={project.title}
-                classes={{
-                  root: classes.titleBar,
-                  title: classes.title,
-                }}
-              />
-            </GridListTile>
-          ))}
-        </GridList>
-      </div>
-      
 
-      {/*  Web Apps */}
+      {/* Web Apps */}
       <div className={classes.root}>
         <h1 className={classes.header}>Web Apps</h1>
-        <GridList className={classes.gridListsingle} cols={3}>
-          {webAppData.map((project) => (
-            <GridListTile key={project.img}>
-              <img src={project.img} alt={project.title} />
-              <GridListTileBar
-                title={project.title}
-                classes={{
-                  root: classes.titleBar,
-                  title: classes.title,
-                }}
-              />
-            </GridListTile>
-          ))}
-        </GridList>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} md={3}>
+            <Card header={roboheader} img={roboImg} text={robotext} link={robolink} letter={roboletter} />
+          </Grid>
+           <Grid item xs={12} sm={12} md={3}>
+            <Card header={touristheader} img={touristImg} text={touirstext} link={touristlink} letter={touristletter}/>
+          </Grid>
+          <Grid item xs={12} sm={12} md={3}>
+            <Card header={faceheader} img={faceImg} text={facetext} link={facelink} letter={faceletter}/>
+          </Grid>
+          <Grid item xs={12} sm={12} md={3}>
+            <Card header={gooddealheader} img={gooddealImg} text={gooddealtext} link={goooddeallink} letter={goooddealletter}/>
+          </Grid>
+        </Grid>
       </div>
-      
+
+      {/* AI projects */}
+      <div className={classes.root}>
+        <h1 className={classes.header}>AI projects</h1>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} md={4}></Grid>
+          <Grid item xs={12} sm={12} md={4}>
+            <Card header={objectdetectheader} img={objectImg} text={objectdetecttext} link={objectdetectlink} letter={objectdetectletter}/>
+          </Grid>
+        </Grid>
+      </div>
+
       {/* Mobile Apps */}
-      <div></div>
+      <div className={classes.root}>
+        <h1 className={classes.header}>Mobile Apps</h1>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} md={4}></Grid>
+          <Grid item xs={12} sm={12} md={4}>
+            <Card header={gsmheader} img={gsmImg} text={gsmtext} link={gsmlink} letter={gsmletter}/>
+          </Grid>
+        </Grid>
+      </div>
+
     </div>
   );
 }
+
+export default Projects;
