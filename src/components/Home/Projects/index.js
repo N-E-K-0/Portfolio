@@ -50,14 +50,14 @@ const facelink = 'https://github.com/N-E-K-0/Face_detection'
 const faceletter = 'F'
 
 const gooddealheader = 'Good Deal'
-const gooddealtext = 'The web app helps the user to compare their desired products.'
+const gooddealtext = 'Comming soon.'
 const goooddeallink = 'https://drive.google.com/file/d/13u0c-qfRbad0btDWF78aZeOtb2QMh_CU/view?usp=sharing'
 const goooddealletter = 'G'
 
 {/* Mobile Apps */}
 const gsmheader = 'GSMArena Clone'
-const gsmtext = 'Mobile app for smartphone specification and comparison. '
-const gsmlink = 'https://github.com/N-E-K-0/object_detection'
+const gsmtext = 'Comming soon.'
+const gsmlink = 'https://drive.google.com/drive/folders/1aJs-QhZHeOr6H0GeXtCFdCKA6SyLO57b?usp=sharing'
 const gsmletter = 'G'
 
 
@@ -86,17 +86,6 @@ const Projects = () => {
         </Grid>
       </div>
 
-      {/* AI projects */}
-      <div className={classes.root}>
-        <h1 className={classes.header}>AI projects</h1>
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={12} md={4}></Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <Card header={objectdetectheader} img={objectImg} text={objectdetecttext} link={objectdetectlink} letter={objectdetectletter}/>
-          </Grid>
-        </Grid>
-      </div>
-
       {/* Mobile Apps */}
       <div className={classes.root}>
         <h1 className={classes.header}>Mobile Apps</h1>
@@ -108,6 +97,17 @@ const Projects = () => {
         </Grid>
       </div>
 
+      {/* AI projects */}
+      <div className={classes.root}>
+        <h1 className={classes.header}>AI projects</h1>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} md={4}></Grid>
+          <Grid item xs={12} sm={12} md={4}>
+            <Card header={objectdetectheader} img={objectImg} text={objectdetecttext} link={objectdetectlink} letter={objectdetectletter}/>
+          </Grid>
+        </Grid>
+      </div>
+      
     </div>
   );
 }
