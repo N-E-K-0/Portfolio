@@ -57,7 +57,7 @@ const Skills = () => {
             </Grid>
             {/* <Grid item xs={1}></Grid> */}
             <Grid item xs={8}><br /><br />
-                <h3 className={classes.h3}>Familiar with</h3><br />
+                <h3 className={classes.h3}>Comfortable with</h3><br />
 
                 {/* HTML */}
                 <motion.svg 

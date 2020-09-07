@@ -99,7 +99,7 @@ const Header = () => {
                         animate="visible"
                         whileHover={{ scale: 1.1 }}
                         style={{cursor:'pointer'}}
-                        onClick={() => window.open("/Portfolio")}
+                        onClick={() => window.open("/")}
                         drag
                         dragConstraints={{left:0, top:0, right:0, bottom:0}}
                     >
