@@ -71,16 +71,16 @@ const Projects = () => {
       <div className={classes.root}>
         <h1 className={classes.header}>Web Apps</h1>
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={12} md={4}>
+          <Grid item xs={12} sm={12} md={3}>
             <Card header={roboheader} img={roboImg} text={robotext} link={robolink} letter={roboletter} />
           </Grid>
-           <Grid item xs={12} sm={12} md={4}>
+           <Grid item xs={12} sm={12} md={3}>
             <Card header={touristheader} img={touristImg} text={touirstext} link={touristlink} letter={touristletter}/>
           </Grid>
-          <Grid item xs={12} sm={12} md={4}>
+          <Grid item xs={12} sm={12} md={3}>
             <Card header={faceheader} img={faceImg} text={facetext} link={facelink} letter={faceletter}/>
           </Grid>
-          <Grid item xs={12} sm={12} md={4}>
+          <Grid item xs={12} sm={12} md={3}>
             <Card header={gooddealheader} img={gooddealImg} text={gooddealtext} link={goooddeallink} letter={goooddealletter}/>
           </Grid>
         </Grid>

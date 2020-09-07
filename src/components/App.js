@@ -17,7 +17,7 @@ function App() {
               <Switch>
                 <ParallaxProvider>
                   <Container maxWidth="lg">
-                    <Route exact path="/Portfolio/" component={Home}/>
+                    <Route exact path="/" component={Home}/>
                     <Route path="/about" component={About} />
                   </Container>
                 </ParallaxProvider>
