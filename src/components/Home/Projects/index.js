@@ -6,7 +6,7 @@ import Card from './projectCard'
 import roboImg from '../../../assets/images/Robofriends.png';
 import touristImg from '../../../assets/images/Touristplace.jpg';
 import faceImg from '../../../assets/images/Face_detection.JPG'
-import gooddealImg from '../../../assets/images/goodeal.jpg';
+import gooddealImg from '../../../assets/images/gooddeal.jpg';
 import objectImg from '../../../assets/images/object_detection.jpg';
 import gsmImg from '../../../assets/images/gsmapp.jpg';
 
@@ -35,7 +35,7 @@ const objectdetectletter = 'O'
 
 {/* Web Apps */ }
 const gooddealheader = 'Good Deal'
-const gooddealtext = 'The website will help the user to compare price of electronic devices before making a purchase decision.'
+const gooddealtext = 'The website will help the user to compare price of electronic devices.'
 const goooddeallink = 'https://good-deal.com.bd/'
 const goooddealletter = 'G'
 
@@ -72,6 +72,9 @@ const Projects = () => {
         <h1 className={classes.header}>Web Apps</h1>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12} md={3}>
+            <Card header={gooddealheader} img={gooddealImg} text={gooddealtext} link={goooddeallink} letter={goooddealletter}/>
+          </Grid>
+          <Grid item xs={12} sm={12} md={3}>
             <Card header={roboheader} img={roboImg} text={robotext} link={robolink} letter={roboletter} />
           </Grid>
            <Grid item xs={12} sm={12} md={3}>
@@ -79,9 +82,6 @@ const Projects = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={3}>
             <Card header={faceheader} img={faceImg} text={facetext} link={facelink} letter={faceletter}/>
-          </Grid>
-          <Grid item xs={12} sm={12} md={3}>
-            <Card header={gooddealheader} img={gooddealImg} text={gooddealtext} link={goooddeallink} letter={goooddealletter}/>
           </Grid>
         </Grid>
       </div>
