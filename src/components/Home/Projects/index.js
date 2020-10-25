@@ -34,6 +34,11 @@ const objectdetectlink = 'https://github.com/N-E-K-0/object_detection'
 const objectdetectletter = 'O'
 
 {/* Web Apps */ }
+const gooddealheader = 'Good Deal'
+const gooddealtext = 'The website will help the user to compare price of electronic devices before making a purchase decision.'
+const goooddeallink = 'https://good-deal.com.bd/'
+const goooddealletter = 'G'
+
 const roboheader = 'Robo Friends'
 const robotext = 'This is a fun project. You can find  your favorite robot friends from here. '
 const robolink = 'https://n-e-k-0.github.io/Robofriends/'
@@ -48,11 +53,6 @@ const faceheader = 'Face Detection'
 const facetext = 'This web app can detect any image with a human face in it.'
 const facelink = 'https://github.com/N-E-K-0/Face_detection'
 const faceletter = 'F'
-
-const gooddealheader = 'Good Deal'
-const gooddealtext = 'Coming soon.'
-const goooddeallink = 'https://drive.google.com/file/d/13u0c-qfRbad0btDWF78aZeOtb2QMh_CU/view?usp=sharing'
-const goooddealletter = 'G'
 
 {/* Mobile Apps */}
 const gsmheader = 'GSMArena Clone'
