@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "Drum Kit",
+    subtitle: "Press the designated keys and enjoy!",
+    technologies:"Html, Css, JavaScript",
+    image: "./drum-kit.gif",
+    link: "https://n-e-k-0.github.io/drum-kit/",
+  },
+  {
     title: "Robo Friends",
     subtitle: "All my robot friends are here",
     technologies:"Html, Css, JavaScript, React",
