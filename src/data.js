@@ -3,14 +3,14 @@ export const projects = [
     title: "Drum Kit",
     subtitle: "Press the designated keys and enjoy!",
     technologies:"Html, Css, JavaScript",
-    image: "./analog-clock.gif",
+    image: "./drum-kit.gif",
     link: "https://n-e-k-0.github.io/drum-kit/",
   },
   {
     title: "Analog Clock",
     subtitle: "Enjoy the fun analog clock!",
     technologies:"Html, Css, JavaScript",
-    image: "./drum-kit.gif",
+    image: "./analog-clock.gif",
     link: "https://n-e-k-0.github.io/css-clock/",
   },
   {
