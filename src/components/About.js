@@ -9,7 +9,7 @@ export default function About() {
             className="object-cover object-top rounded"
             alt="hero"
             // src="./image_Samiul_Islam.svg"
-            src="./image-visa.jpg"
+            src="./image-visa-tps.png"
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
