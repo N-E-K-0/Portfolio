@@ -32,14 +32,24 @@ export default function Contact() {
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1844.8152937464743!2d91.77515417820166!3d22.36757329813024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd90b06450551%3A0xc1762a640bfed6a9!2s9Q9G%2B77C%2C%20Chittagong%204217!5e0!3m2!1sen!2sbd!4v1717488149242!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            width="100%"
+            height="100%"
+            title="map"
+            className="absolute inset-0"
+            frameBorder={0}
+            marginHeight={0}
+            marginWidth={0}
+            style={{ filter: "opacity(0.7)" }}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1489.3036880798068!2d91.77524101705288!3d22.367980103853235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd9006493ded5%3A0x31a9025f0fe72b52!2z4Kao4KeB4KawIOCmh-CmuOCmsuCmvuCmriDgpq7gpp7gp43gppzgpr_gprI!5e0!3m2!1sen!2sbd!4v1717488479885!5m2!1sen!2sb"
+          />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
               <p className="mt-1">
-                1308, Natun Para, Colonel Zones Sarak, North Kattoli, Akbarshah, Chattogram, Bangladesh</p>
+              1308, Natun Para, Colonel Zones Sarak, North Kattoli, Akbarshah, Chattogram, Bangladesh</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
