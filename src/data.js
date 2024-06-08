@@ -14,6 +14,13 @@ export const projects = [
     link: "https://n-e-k-0.github.io/css-clock/",
   },
   {
+    title: "Flex Gallery",
+    subtitle: "A Fun Gallery",
+    technologies:"Html, Css, JavaScript",
+    image: "./flex-gallery.gif",
+    link: "n-e-k-0.github.io/flex-gallery/",
+  },
+  {
     title: "Robo Friends",
     subtitle: "All my robot friends are here",
     technologies:"Html, Css, JavaScript, React",
