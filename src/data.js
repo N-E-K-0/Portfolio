@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Word Analystics",
+    subtitle:
+      "Check the character limit of your social media post with this cool little app!",
+    technologies: "Html, Css, JavaScript, React",
+    image: "./word-analytics.gif",
+    link: "https://n-e-k-0.github.io/word-analytics/",
+  },
+  {
     title: "Fancy Counter",
     subtitle: "Press the +/- button and count anything!!",
     technologies: "Html, Css, JavaScript, React",
