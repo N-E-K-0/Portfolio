@@ -77,9 +77,11 @@ export const skills = [
   "Html",
   "CSS",
   "JavaScript",
+  "TypeScript",
   "React",
   "Next.js",
-  "Ant Design",
   "Tailwind Css",
+  "Ant Design",
   "Material UI",
+  "Zustand",
 ];
