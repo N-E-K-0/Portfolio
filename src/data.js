@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Trekbag",
+    subtitle:
+      "Pack all your travelling items and checked them with the fun useful app!",
+    technologies: "Html, Css, JavaScript, React, Zustand",
+    image: "./trekbag.gif",
+    link: "https://n-e-k-0.github.io/trekbag/",
+  },
+  {
     title: "Word Analystics",
     subtitle:
       "Check the character limit of your social media post with this cool little app!",
