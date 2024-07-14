@@ -72,13 +72,13 @@ export const projects = [
     image: "./football-responsive.gif",
     link: "https://n-e-k-0.github.io/Football-responsive/index.html",
   },
-  {
-    title: "Multi-Cuisine",
-    subtitle: "A multi cuisine site for fun",
-    technologies: "Html, Css",
-    image: "./cuisine.gif",
-    link: "https://n-e-k-0.github.io/developer-portfolio/index.html",
-  },
+  // {
+  //   title: "Multi-Cuisine",
+  //   subtitle: "A multi cuisine site for fun",
+  //   technologies: "Html, Css",
+  //   image: "./cuisine.gif",
+  //   link: "https://n-e-k-0.github.io/developer-portfolio/index.html",
+  // },
 ];
 
 export const skills = [
