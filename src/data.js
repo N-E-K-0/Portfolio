@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Corp-Comment",
+    subtitle:
+      "Give feedback to the great companies without any hassle, publicly.",
+    technologies: "Html, Css, JavaScript, TypeScript, React, Zustand",
+    image: "./corp-comment.gif",
+    link: "https://github.com/N-E-K-0/corp-comment",
+  },
+  {
     title: "Trekbag",
     subtitle:
       "Pack all your travelling items and checked them with the fun useful app!",
