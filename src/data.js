@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Remote Developer",
+    subtitle: "A demo remote developer job searching website.",
+    technologies:
+      "Html, Css, JavaScript, TypeScript, React, Context API, React Query",
+    image: "./rmtDev.gif",
+    link: "https://n-e-k-0.github.io/rmtDev/",
+  },
+  {
     title: "Corp-Comment",
     subtitle:
       "Give feedback to the great companies without any hassle, publicly.",
@@ -65,13 +73,13 @@ export const projects = [
     image: "./travel-guide.gif",
     link: "https://n-e-k-0.github.io/TouristPlace/",
   },
-  {
-    title: "Football website",
-    subtitle: "A responsive website using html",
-    technologies: "Html, Css, JavaScript",
-    image: "./football-responsive.gif",
-    link: "https://n-e-k-0.github.io/Football-responsive/index.html",
-  },
+  // {
+  //   title: "Football website",
+  //   subtitle: "A responsive website using html",
+  //   technologies: "Html, Css, JavaScript",
+  //   image: "./football-responsive.gif",
+  //   link: "https://n-e-k-0.github.io/Football-responsive/index.html",
+  // },
   // {
   //   title: "Multi-Cuisine",
   //   subtitle: "A multi cuisine site for fun",
