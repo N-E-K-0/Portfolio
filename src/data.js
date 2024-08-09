@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "Evento",
+    subtitle: "Checkout the fun events around your area.",
+    technologies: "Html, Css, JavaScript, TypeScript, React, Next, Prisma",
+    image: "./evento.gif",
+    link: "https://evento-sooty.vercel.app/",
+  },
+  {
     title: "Remote Developer",
     subtitle: "A demo remote developer job searching website.",
     technologies:
@@ -53,13 +60,6 @@ export const projects = [
     link: "https://n-e-k-0.github.io/css-clock/",
   },
   {
-    title: "Flex Gallery",
-    subtitle: "A Fun Gallery",
-    technologies: "Html, Css, JavaScript",
-    image: "./flex-gallery.gif",
-    link: "n-e-k-0.github.io/flex-gallery/",
-  },
-  {
     title: "Robo Friends",
     subtitle: "All my robot friends are here",
     technologies: "Html, Css, JavaScript, React",
@@ -73,6 +73,13 @@ export const projects = [
     image: "./travel-guide.gif",
     link: "https://n-e-k-0.github.io/TouristPlace/",
   },
+  // {
+  //   title: "Flex Gallery",
+  //   subtitle: "A Fun Gallery",
+  //   technologies: "Html, Css, JavaScript",
+  //   image: "./flex-gallery.gif",
+  //   link: "n-e-k-0.github.io/flex-gallery/",
+  // },
   // {
   //   title: "Football website",
   //   subtitle: "A responsive website using html",
