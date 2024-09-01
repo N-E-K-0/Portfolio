@@ -1,8 +1,17 @@
 export const projects = [
   {
+    title: "PetSoft",
+    subtitle: "Try this awesome pet management software.",
+    technologies:
+      "Html, Css, Tailwind, JavaScript, TypeScript, React, Next, Prisma, Stripe",
+    image: "./petsoft.gif",
+    link: "https://petsoft-bay.vercel.app/",
+  },
+  {
     title: "Evento",
     subtitle: "Checkout the fun events around your area.",
-    technologies: "Html, Css, JavaScript, TypeScript, React, Next, Prisma",
+    technologies:
+      "Html, Css, Tailwind, JavaScript, TypeScript, React, Next, Prisma",
     image: "./evento.gif",
     link: "https://evento-sooty.vercel.app/",
   },
@@ -66,13 +75,13 @@ export const projects = [
     image: "./robo-friends.gif",
     link: "https://n-e-k-0.github.io/Robofriends/",
   },
-  {
-    title: "Tourist Place",
-    subtitle: "All the noteworhty tourist places in bangladesh",
-    technologies: "Html, Css, JavaScript, React",
-    image: "./travel-guide.gif",
-    link: "https://n-e-k-0.github.io/TouristPlace/",
-  },
+  // {
+  //   title: "Tourist Place",
+  //   subtitle: "All the noteworhty tourist places in bangladesh",
+  //   technologies: "Html, Css, JavaScript, React",
+  //   image: "./travel-guide.gif",
+  //   link: "https://n-e-k-0.github.io/TouristPlace/",
+  // },
   // {
   //   title: "Flex Gallery",
   //   subtitle: "A Fun Gallery",
