@@ -1,4 +1,4 @@
-export const projects = [
+export const web_apps = [
   {
     title: "PetSoft",
     subtitle: "Try this awesome pet management software.",
@@ -75,14 +75,6 @@ export const projects = [
     image: "./robo-friends.gif",
     link: "https://n-e-k-0.github.io/Robofriends/",
   },
-  {
-    title: "Aora",
-    subtitle:
-      "A highly interactive mobile application where you can upload and view your beloved videos",
-    technologies: "Html, Css, JavaScript, React Native, Appwrite",
-    image: "./aora.gif",
-    link: "https://github.com/N-E-K-0/aora_mobile_app",
-  },
   // {
   //   title: "Tourist Place",
   //   subtitle: "All the noteworhty tourist places in bangladesh",
@@ -111,6 +103,17 @@ export const projects = [
   //   image: "./cuisine.gif",
   //   link: "https://n-e-k-0.github.io/developer-portfolio/index.html",
   // },
+];
+
+export const mobile_apps = [
+  {
+    title: "Aora",
+    subtitle:
+      "A highly interactive mobile application where you can upload and view your beloved videos",
+    technologies: "Html, Css, JavaScript, React Native, Appwrite",
+    image: "./aora.gif",
+    link: "https://github.com/N-E-K-0/aora_mobile_app",
+  },
 ];
 
 export const skills = [
