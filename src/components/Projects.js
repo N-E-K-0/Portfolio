@@ -45,7 +45,7 @@ export default function Projects() {
         </div>
 
         {/* mobile apps */}
-        <div className="flex flex-col w-full mb-20 mt-10">
+        {/* <div className="flex flex-col w-full mb-20 mt-10">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Mobile Apps I've Built
@@ -82,7 +82,7 @@ export default function Projects() {
               </div>
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
