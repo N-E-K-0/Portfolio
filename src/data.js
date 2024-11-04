@@ -117,14 +117,12 @@ export const mobile_apps = [
 ];
 
 export const skills = [
-  "Html",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Tailwind Css",
-  "Ant Design",
-  "Material UI",
-  "Zustand",
+  "Html, CSS, JavaScript, TypeScript",
+  "NodeJs, ExpressJs, GraphQL",
+  "ReactJs, NextJs, React Native",
+  "MySQL, PostgreSql, MongoDB",
+  "Tailwind Css, Ant Design, Shadcn/ui",
+  "Git, GitHub, BitBucket, Jira",
+  "Context API, Redux, Zustand",
+  "Netlify, Vercel, Heroku",
 ];
