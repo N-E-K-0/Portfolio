@@ -13,7 +13,7 @@ export default function App() {
       <Navbar />
       <About />
       <Projects />
-      <MobileApps />
+      {/* <MobileApps /> */}
       <Skills />
       <Contact />
       <Footer />
