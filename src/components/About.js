@@ -19,8 +19,7 @@ export default function About() {
             apps.
           </h1>
           <p className="mb-8 leading-relaxed">
-            I am a developer and currently working as a Software Associate in SSL Wireless. I love to travel and occassionally play chess.
-          </p>
+            I’m a results-oriented Full-Stack Developer with 4+ years of experience delivering scalable web and mobile applications using JavaScript, TypeScript, React, Node.js, and Python. I bring a strong balance of technical expertise and teamwork, having built solutions involving Salesforce APIs, real-time systems, and micro-services. Passionate about clean, maintainable code and agile collaboration, I thrive in diverse, fast-paced environments. I’m currently expanding my skills in Docker, CI/CD, and cloud deployment to align with modern U.S. engineering practices. My goal is to contribute to innovative teams that value quality, efficiency, and continuous learning while driving meaningful business outcomes.          </p>
           <div className="flex justify-center">
             <a
               href="#contact"

@@ -32,7 +32,7 @@ export default function Contact() {
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
+          {/* <iframe
             width="100%"
             height="100%"
             title="map"
@@ -42,6 +42,18 @@ export default function Contact() {
             marginWidth={0}
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1489.3036880798068!2d91.77524101705288!3d22.367980103853235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd9006493ded5%3A0x31a9025f0fe72b52!2z4Kao4KeB4KawIOCmh-CmuOCmsuCmvuCmriDgpq7gpp7gp43gppzgpr_gprI!5e0!3m2!1sen!2sbd!4v1717488479885!5m2!1sen!2sb"
+          /> */}
+
+          <iframe 
+            width="100%"
+            height="100%"
+            title="map"
+            className="absolute inset-0"
+            frameBorder={0}
+            marginHeight={0}
+            marginWidth={0}
+            style={{ filter: "opacity(0.7)" }}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2922.7837917587717!2d-78.81782102417925!3d42.89850820091476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d30d0ac9532d17%3A0x2c1d96f9d3e0a471!2s54%20Gatchell%20St%2C%20Buffalo%2C%20NY%2014212%2C%20USA!5e0!3m2!1sen!2sbd!4v1763290746408!5m2!1sen!2sbd" 
           />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
